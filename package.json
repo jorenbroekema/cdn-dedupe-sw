@@ -1,0 +1,23 @@
+{
+  "name": "dedupe-sw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run esmify-semver && wds --node-resolve --open --watch",
+    "esmify-semver": "rollup -c semver.rollup.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "semver": "^7.5.0",
+    "util": "^0.12.5"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@web/dev-server": "^0.1.38",
+    "rollup": "^2.79.1"
+  }
+}
